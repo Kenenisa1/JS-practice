@@ -4,6 +4,9 @@
 }
 h1{
     padding: 10px;
+    margin: 5%;
+    width: 90%;
+    font-size: 15px;
 }
 p{
     background-color: purple;
@@ -34,4 +37,31 @@ button{
     background-color: white;
     font-size: 15px;
     text-align: center;
+}
+#clicks{
+    background-color: yellow;
+    color: red;
+    border: 1px green solid;
+    width: 90%;
+    margin: 3% auto;
+    display: flex;
+    align-items: center;
+}
+#clicks img{
+   width: 100px;
+    height: auto;
+}
+
+.images{
+    width: 30%;
+    border: 1px solid white;
+}
+
+#hide{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#show{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
