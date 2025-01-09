@@ -119,28 +119,51 @@ myfr.removeClass("yellow")
 //         )
 //         $("input").css("backgroundColor" , "pink")
 // }
-$("#formid").on("submit", function(e){
-    e.preventDefault();
-    let x=$("input[name='First name' ]").val();
-    let y=$("input[name='Last name' ]").val();
-    let z=$("#input3").val();
-    if($.isNumeric(x) && $.isNumeric(y))
-    {
-        let sum=parseInt(x) + parseInt(y);
-       $(this).append("<p>" + sum + "</p>").css(
-        {
-            "padding" : "30px",
-            "boderStyle" : "white",
-            "fontFamily" : "lucida"
-        }
-       )
-    }
-    else
-    {
-        $("#formid").prepend("<p> Please enter only numbers");
-    }
-} );
+
+
+// $("#formid").on("submit", function(e){
+//     e.preventDefault();
+//     let x=$("input[name='First name' ]").val();
+//     let y=$("input[name='Last name' ]").val();
+//     let z=$("#input3").val();
+//     if($.isNumeric(x) && $.isNumeric(y))
+//     {
+//         let sum=parseInt(x) + parseInt(y);
+//        $(this).append("<p>" + sum + "</p>").css(
+//         {
+//             "padding" : "30px",
+//             "boderStyle" : "white",
+//             "fontFamily" : "lucida"
+//         }
+//        )
+//     }
+//     else
+//     {
+//         $("#formid").prepend("<p> Please enter only numbers");
+//     }
+// } );
  
+
+
 let fos=$("#hide").on("click", function (){
     let n=$("#input1").hide();
+    fos.css("backgroundColor" ,"yellow")
 })
+
+let m=$("#mybutton").on("click", function(e){
+    e.preventDefault();
+    $("img").fadeToggle();
+}
+)
+
+// let s=$("h1");
+// $("#mybutton").on("click", function (e){
+//     e.preventDefault();
+//     $("img").animate(
+//         {
+//             "scale": "1.04",
+//             "color": "white"
+//         },
+//         2000
+//     )
+// })
