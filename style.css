@@ -1,0 +1,37 @@
+*{
+    margin: 0 1%;
+    padding: 5px;
+}
+h1{
+    padding: 10px;
+}
+p{
+    background-color: purple;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 1%;
+    margin-left: 0%;
+    margin-right: 78%;
+    color: white;
+}
+input{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 3px;
+}
+button{
+    background-color: purple;
+    color: white;
+    padding: 5px;
+}
+
+.yellow{
+    color: red !important;
+    background-color: yellow !important;
+}
+.Green{
+    color: green;
+    background-color: white;
+    font-size: 15px;
+    text-align: center;
+}
