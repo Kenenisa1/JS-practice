@@ -140,16 +140,7 @@ $("#formid").on("submit", function(e){
         $("#formid").prepend("<p> Please enter only numbers");
     }
 } );
-
-$("#click").css(
-    {
-        "border" : "1px green solid",
-        "padding ": "30px",
-        "backgroundColor": "yellow",
-        "color ": "red"
-    }
-);
-
-$("#hide").on("click" , function( ) {
-    $(this).hide(); 
+ 
+let fos=$("#hide").on("click", function (){
+    let n=$("#input1").hide();
 })
