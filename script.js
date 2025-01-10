@@ -78,6 +78,8 @@
 //     anchor.style.color="red";
 //     anchor.style.fontFamily="cursive";
 // })
+let reg="This is regular expression";
+let def=reg.search("/regular/i");
 
 let js=$("h1").click().css("color", "blue");
 // let jm=$(".container").click().css("backgroundColor", "yellow");
@@ -152,7 +154,7 @@ let fos=$("#hide").on("click", function (){
 
 let m=$("#mybutton").on("click", function(e){
     e.preventDefault();
-    $("img").fadeToggle();
+    $("img").toggle();
 }
 )
 
