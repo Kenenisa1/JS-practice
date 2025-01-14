@@ -78,29 +78,29 @@
 //     anchor.style.color="red";
 //     anchor.style.fontFamily="cursive";
 // })
-let reg="This is regular expression";
-let def=reg.search("/regular/i");
+// let reg="This is regular expression";
+// let def=reg.search("/regular/i");
 
-let js=$("h1").click().css("color", "blue");
+// let js=$("h1").click().css("color", "blue");
 // let jm=$(".container").click().css("backgroundColor", "yellow");
 // console.log(jm.click().css("backgroundColor", "yellow"));
-js.hide();
-js.show();
-js.html("<h5> This is the changed header</h5>");
-let myfr=$("#formid");
-myfr.css(
-    "backgroundColor", "green"
-)
-myfr.append("<h1> This is the appended header after the form tag")
-myfr.before("<p> Welcome to the form tag</p>")
-myfr.css({
-    "color": "blue",
-    "fontFamily": "impact",
-    "fontSize": "15px"
-})
+// js.hide();
+// js.show();
+// js.html("<h5> This is the changed header</h5>");
+// let myfr=$("#formid");
+// myfr.css(
+//     "backgroundColor", "green"
+// )
+// myfr.append("<h1> This is the appended header after the form tag")
+// myfr.before("<p> Welcome to the form tag</p>")
+// myfr.css({
+//     "color": "blue",
+//     "fontFamily": "impact",
+//     "fontSize": "15px"
+// })
 
-myfr.addClass("yellow");
-myfr.removeClass("yellow")
+// myfr.addClass("yellow");
+// myfr.removeClass("yellow")
 
 // let firsn=$("input:first");
 // firsn.val("This is first name");
@@ -169,3 +169,110 @@ let m=$("#mybutton").on("click", function(e){
 //         2000
 //     )
 // })
+
+// console.log("This is the new era for js");
+console.log("Welcome");
+
+let StudentData=[
+    {
+        Name: "Kenenisa", age:20, id: "NSR/557/15", Gender: "Male"
+    },
+    {
+        Name: "Orhan", age:30, id: "NSR/557/15", Gender: "Male"
+    },
+    {
+        Name: "Abdurezak", age:30, id: "NSR/557/15", Gender: "Male"
+    },
+    {
+        Name: "Ahmed", age:50, id: "NSR/557/15", Gender: "Male"
+    },
+    {
+        Name: "Towfik", age:30, id: "NSR/557/15", Gender: "Male"
+    }
+];
+
+for(let i=0;i<StudentData.length;i++) {
+    console.log(StudentData[i]);
+}
+
+StudentData.forEach(function(data){
+    console.log(data.Gender);
+})
+
+let ages =[20,30,40,50,60,70]
+
+let Array=[];
+for(let i=0; i<StudentData.length; i++){
+    if(ages[i]>=40){
+        Array.push(ages[i]);
+    }
+}
+
+console.log(Array)
+
+const FilterArray=ages.filter(function(age) {
+    if(age >= 30 ){
+        return true;
+    }
+})
+
+console.log(FilterArray)
+
+const Arrow=ages.filter(age => age>=50);
+console.log(Arrow);
+
+const commonAges=StudentData.filter(function(f){
+    if(f.age==30){
+        return true;
+    }
+})
+
+console.log(commonAges);
+
+const commonArrow=StudentData.filter(f => f.Name==='Kenenisa');
+
+console.log(commonArrow);
+
+const StudentNames=StudentData.map(function(n){
+    return n.age;
+})
+console.log(StudentNames)
+
+const testMap = StudentData.map(function(data){
+    return '${data.Name} ,${data.id}';
+})
+console.log(testMap)
+
+const ageSquare=ages.map(age => Math.sqrt(age));
+console.log(ageSquare);
+
+const SortData=StudentData.sort(function(a,b){
+    if(a.age > b.age){
+        return 1;
+    }
+    else{
+        return -1;
+    }
+})
+
+console.log(SortData);
+
+const SortAge= ages.sort((a,b) => a-b)
+
+console.log(SortAge)
+
+let ageSum = 0;
+ages.forEach(function(single){
+    ageSum+= single;
+})
+console.log(ageSum)
+
+let test=ages.reduce(function(total,age){
+    return total + age;
+},0)
+
+console.log(test)
+
+let test2=ages.reduce((total, age) => total+age, 0)
+
+console.log(test2);   
